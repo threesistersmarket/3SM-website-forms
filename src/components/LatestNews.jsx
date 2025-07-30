@@ -26,7 +26,7 @@ function LatestNews() {
       image: "https://www.charlotteobserver.com/latest-news/2mp212/picture276659511/alternates/FREE_1140/CLT_fooddesert_03",
       date: "2023-06-30",
       author: "Catherine Muccigrosso",
-      url: "https://www.charlotteobserver.com/news/business/whats-in-store/article276593206.html"
+      url: "https://jaytxitcypjelvxzcaif.supabase.co/storage/v1/object/public/media//siteplan.jpg"
     },
   ];
 
