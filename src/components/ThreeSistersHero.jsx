@@ -20,7 +20,7 @@ function ThreeSistersHero() {
           <div className="relative slide-in-right">
             <div className="organic-border overflow-hidden natural-shadow">
               <img
-                src="https://jaytxitcypjelvxzcaif.supabase.co/storage/v1/object/public/media//3SM%20group%20shot%204.jpg"
+                src="https://jaytxitcypjelvxzcaif.supabase.co/storage/v1/object/public/media/3SM%20Hat.jpg"
                 alt="Community impact"
                 className="w-full object-cover hover:scale-105 transition-transform duration-700"
               />
