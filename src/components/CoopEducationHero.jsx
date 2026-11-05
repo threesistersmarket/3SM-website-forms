@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoChevronForward, IoSwapHorizontal, IoPeople, IoSchool, IoHandLeft, IoPlay } from 'react-icons/io5';
 
+/*
+ * Behavior story: A visitor who wants to understand, not shop or sign up,
+ * learns right away that this page is for exploring. They see the topics
+ * we cover and jump straight to the issue they care about.
+ */
 function CoopEducationHero() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(0);
@@ -34,9 +39,16 @@ function CoopEducationHero() {
       <div className="container">
         <div className="grid grid-cols-1 items-start gap-x-12 gap-y-5 md:grid-cols-2 lg:gap-x-20 lg:gap-y-16">
           <div className="fade-in">
-            <h1 className="text-5xl font-bold md:text-9xl lg:text-10xl bg-gradient-to-r from-accent-3 via-accent-1 to-accent-2 bg-clip-text text-transparent mb-8">
-              Understanding Co-ops
+            <p className="eyebrow">Learn with us</p>
+            <h1 className="text-5xl font-bold md:text-7xl lg:text-8xl text-text-primary mb-6">
+              Why food, why here, why together
             </h1>
+            <p className="mb-6 text-lg">
+              Pull up a chair. This is where we dig into the history and the systems behind our food:
+              who grows it, who sells it, who gets left out, and how communities have always found
+              ways to feed each other.
+            </p>
+            <a href="#issues" className="btn-primary mb-8">Explore the issues</a>
             
             {/* Cooperative Education Graphic */}
             <div className="relative p-8 bg-white rounded-lg shadow-lg border-t-4 border-accent-3">
@@ -114,7 +126,7 @@ function CoopEducationHero() {
               </button>
             </div>
             <p className="mt-6 md:text-md bg-white/80 backdrop-blur-sm p-6 rounded-lg natural-shadow">
-              Discover how co-ops are carefully constructed through a thoughtful process that emphasizes collaboration and shared values. The active participation of the community is key to ensuring the co-op’s growth and sustainability, making it a truly collective effort.
+              Hear from neighbors and co-op builders about what it takes to create a business owned by the people it serves, and why so many communities have turned to this model when the market left them behind.
             </p>
           </div>
         </div>

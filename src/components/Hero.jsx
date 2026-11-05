@@ -10,6 +10,13 @@ const supabase = createClient(
   import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
+/*
+ * Behavior story: A first-time visitor (maybe from Instagram, maybe a
+ * neighbor who walked past the site) gets the gist in five seconds:
+ * this is a grocery store on the way, owned by the community, and
+ * they're welcome here. They either step inside (scroll to the shelves)
+ * or take the next step toward ownership.
+ */
 function Hero() {
   const location = useLocation();
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -89,7 +96,7 @@ function Hero() {
               Three Sisters Market
             </h1>
             <h2 className="mb-4 text-3xl font-semibold md:text-4xl lg:text-5xl text-white">
-              Building a Community-Driven Co-op
+              Your neighborhood grocery store, owned by the neighborhood
             </h2>
 
             <div className="mb-6 bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-sm inline-flex items-center gap-6 border-t-4 border-accent-3">
@@ -102,11 +109,11 @@ function Hero() {
             </div>
 
             <p className="md:text-md bg-white/90 backdrop-blur-sm p-6 rounded-lg text-text-primary">
-              Welcome to Three Sisters Market, where community and nourishment thrive.
+              Fresh food, fair prices, and a store that answers to West Boulevard. Come on in. There's a seat at this table for you.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Link to="/ownership" className="px-6 py-3 bg-background-alternative text-text-alternative border border-border-primary rounded-lg">Join</Link>
-              <Link to="/coop-education" className="px-6 py-3 bg-transparent text-white border border-white rounded-lg hover:bg-white hover:text-text-primary">Learn More</Link>
+              <Link to="/ownership" className="btn-primary">Become an owner</Link>
+              <a href="#shelves" className="px-6 py-3 text-lg font-semibold bg-transparent text-white border border-white rounded-lg hover:bg-white hover:text-text-primary">Take a look inside</a>
             </div>
           </div>
           <div>

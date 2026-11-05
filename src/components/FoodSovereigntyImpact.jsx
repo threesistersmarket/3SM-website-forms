@@ -1,18 +1,23 @@
 import React from 'react';
 import FoodIllustration from './FoodIllustration';
 
-function FoodJusticeImpact() {
+/*
+ * Behavior story: A visitor wondering "is this real?" sees proof: real
+ * numbers and real footage of neighbors already doing the work.
+ * That builds the trust they need before they act.
+ */
+function FoodSovereigntyImpact() {
   return (
     <section id="impact" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <p className="mb-3 font-semibold md:mb-4 text-accent-3">Impact</p>
-            <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl bg-gradient-to-r from-accent-3 via-accent-1 to-accent-2 bg-clip-text text-transparent">
-              Making a Difference
+            <p className="eyebrow">Already growing</p>
+            <h2 className="mb-5 text-4xl font-bold md:mb-6 md:text-6xl">
+              Neighbors are already doing the work
             </h2>
             <p className="md:text-md">
-              Through our cooperative model and community initiatives, we're creating lasting change in food accessibility and community health. Our impact extends beyond providing fresh food – we're building a sustainable, equitable food system for generations to come.
+              The store isn't open yet, but the work started a long time ago, in community gardens, at coalition meetings, and around kitchen tables. Every partnership and every neighbor we reach brings us closer to a food system we own together.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
@@ -46,4 +51,4 @@ function FoodJusticeImpact() {
   );
 }
 
-export default FoodJusticeImpact;
+export default FoodSovereigntyImpact;

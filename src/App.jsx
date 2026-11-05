@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ThreeSisters from './pages/ThreeSisters';
 import CoopEducation from './pages/CoopEducation';
-import FoodJustice from './pages/FoodJustice';
+import FoodSovereignty from './pages/FoodSovereignty';
+import Shop from './pages/Shop';
 import Ownership from './pages/Ownership';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
@@ -44,7 +45,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/three-sisters" element={<ThreeSisters />} />
           <Route path="/coop-education" element={<CoopEducation />} />
-          <Route path="/food-justice" element={<FoodJustice />} />
+          <Route path="/food-sovereignty" element={<FoodSovereignty />} />
+          <Route path="/food-justice" element={<Navigate to="/food-sovereignty" replace />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/ownership" element={<Ownership />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
