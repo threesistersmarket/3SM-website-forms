@@ -3,28 +3,33 @@ import { IoChevronForward } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import FoodIllustration from './FoodIllustration';
 
+/*
+ * Behavior story: A visitor who's ready to help but isn't sure how scans
+ * three clear paths (own it, stock it, wear it), picks the one that fits,
+ * and lands on the right page.
+ */
 function CallToAction() {
   const opportunities = [
     {
-      title: "Become an Owner",
-      description: "Ownership at Three Sisters Market comes with serious perks. When you join, you're purchasing a piece of our community!",
+      title: "Own a piece of it",
+      description: "Co-op owners get a vote, a voice, and a real stake in the neighborhood grocery store.",
       image: "https://static.wixstatic.com/media/c73eb8_3b97634282b44d2aa514d113de567f59~mv2.jpg",
-      buttonText: "learn more",
+      buttonText: "Become an owner",
       buttonLink: "/ownership"
     },
     {
-      title: "Become a Supplier",
-      description: "Are you interested in becoming a supplier for our store? We hope to make the process as simple as possible for you!",
+      title: "Stock our shelves",
+      description: "Are you a farmer, grower, or maker? We want local goods on our shelves. Let's talk.",
       image: "https://static.wixstatic.com/media/c73eb8_68d7ac7c88d34648a425993f3ecec698~mv2.jpg",
-      buttonText: "learn more",
+      buttonText: "Become a supplier",
       buttonLink: "/contact"
     },
     {
-      title: "Join Our Team",
-      description: "Would you like to use your skills and passions to work at the store? See our current volunteer opportunities.",
+      title: "Wear the mission",
+      description: "Tees, totes, and mugs made to order. Every purchase helps open the store.",
       image: "https://jaytxitcypjelvxzcaif.supabase.co/storage/v1/object/public/media//3SM%20group%20shot%202.jpg",
-      buttonText: "learn more",
-      buttonLink: "/contact"
+      buttonText: "Shop merch",
+      buttonLink: "/shop"
     }
   ];
 
@@ -34,7 +39,7 @@ function CallToAction() {
       <div className="container relative">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-accent-3 via-accent-1 to-accent-2 bg-clip-text text-transparent">
-            Get Involved
+            Three ways to grow with us
           </h2>
           <div className="absolute top-0 right-10 w-24 h-24 opacity-20">
             <FoodIllustration type="sunflower" />
@@ -75,15 +80,6 @@ function CallToAction() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <Link
-            to="/ownership"
-            className="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary bg-background-alternative text-text-alternative px-8 py-4 text-lg rounded-lg hover:bg-accent-3 hover:border-accent-3 transition-colors duration-300"
-          >
-            Join Our Community Today
-          </Link>
         </div>
       </div>
     </section>

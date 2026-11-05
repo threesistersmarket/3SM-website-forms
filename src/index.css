@@ -114,6 +114,21 @@
   }
 }
 
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-border-primary bg-background-alternative px-6 py-3 text-lg font-semibold text-text-alternative transition-colors duration-300 hover:bg-accent-1 hover:border-accent-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border border-border-primary bg-white px-6 py-3 text-lg font-semibold text-text-primary transition-colors duration-300 hover:bg-accent-3 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2;
+  }
+  .eyebrow {
+    @apply mb-3 font-semibold uppercase tracking-widest text-sm text-accent-1 md:mb-4;
+  }
+  .section {
+    @apply px-[5%] py-16 md:py-24 lg:py-28;
+  }
+}
+
 @layer base {
   a {
     @apply transition-colors duration-200 hover:text-accent-1;
@@ -138,6 +153,12 @@
   .earth-gradient {
     background: linear-gradient(135deg, #e6b374 0%, #879e3c 100%);
   }
+}
+
+/* Stop decorative illustrations from causing sideways scroll on phones.
+   `clip` (unlike `hidden`) keeps the sticky navbar working. */
+html, body {
+  overflow-x: clip;
 }
 
 .container {

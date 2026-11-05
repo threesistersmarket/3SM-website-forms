@@ -151,7 +151,6 @@ function ContactForm() {
                 >
                   <option value="">Choose One...</option>
                   <option value="membership">Membership</option>
-                  <option value="volunteering">Volunteering</option>
                   <option value="donations">Donations</option>
                   <option value="supplier">Become a Supplier</option>
                   <option value="general">General Inquiry</option>
@@ -273,7 +272,7 @@ function ContactForm() {
                   </div>
                 </div>
                 <p className="text-white/90">
-                  Our team is dedicated to supporting our community members. Whether you have questions about membership, want to volunteer, or need assistance, we're here for you.
+                  Our team is dedicated to supporting our community members. Whether you have questions about ownership, want to sell your goods at the market, or need a hand, we're here for you.
                 </p>
               </div>
             </div>

@@ -3,6 +3,7 @@ import DonateHero from '../components/DonateHero';
 import DonateWays from '../components/DonateWays';
 import DonateImpact from '../components/DonateImpact';
 import DonateCallToAction from '../components/DonateCallToAction';
+import DonateMerch from '../components/DonateMerch';
 
 
 function Donate() {
@@ -11,6 +12,7 @@ function Donate() {
       <DonateHero />
       <DonateWays />
       <DonateImpact />
+      <DonateMerch />
       <DonateCallToAction />
     </div>
   );

@@ -10,7 +10,7 @@ function ThreeSistersCallToAction() {
             Honor Their Legacy Together
           </h2>
           <p className="text-white md:text-md">
-            Join us in building a brighter future by becoming a member, donating, or volunteering today.
+            Help us carry this legacy forward. Become an owner, give a gift, or rep the market with some merch.
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
             <Link

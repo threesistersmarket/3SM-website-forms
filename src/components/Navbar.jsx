@@ -65,14 +65,21 @@ function Navbar() {
               className={`block py-2 text-base hover:text-accent-1 lg:inline-block ${isActive('/coop-education') ? 'text-accent-3' : ''}`}
               onClick={() => setIsOpen(false)}
             >
-              Co-op Education
+              Learn
             </Link>
             <Link 
-              to="/food-justice" 
-              className={`block py-2 text-base hover:text-accent-1 lg:inline-block ${isActive('/food-justice') ? 'text-accent-3' : ''}`}
+              to="/food-sovereignty" 
+              className={`block py-2 text-base hover:text-accent-1 lg:inline-block ${isActive('/food-sovereignty') ? 'text-accent-3' : ''}`}
               onClick={() => setIsOpen(false)}
             >
-              Food Justice
+              Food Sovereignty
+            </Link>
+            <Link 
+              to="/shop" 
+              className={`block py-2 text-base hover:text-accent-1 lg:inline-block ${isActive('/shop') ? 'text-accent-3' : ''}`}
+              onClick={() => setIsOpen(false)}
+            >
+              Shop
             </Link>
             <Link 
               to="/ownership" 

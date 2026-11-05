@@ -16,15 +16,15 @@ function ContactFAQ() {
     },
     {
       question: "What are the benefits?",
-      answer: "Members enjoy discounts, voting rights, profit sharing, and exclusive events. Plus, you'll be part of a community working towards food justice and sustainability."
+      answer: "Members enjoy discounts, voting rights, profit sharing, and exclusive events. Plus, you'll be part of a community building food sovereignty on West Boulevard."
     },
     {
       question: "Is my investment safe?",
       answer: "Yes, your equity investment is secure and refundable according to our bylaws. We maintain strong financial practices and transparency with our member-owners."
     },
     {
-      question: "Can I volunteer?",
-      answer: "Absolutely! We have various volunteer opportunities available for both members and non-members. Contact us to learn about current opportunities."
+      question: "Can I sell my products at the market?",
+      answer: "We'd love to hear from you! We're building relationships with local farmers, growers, and makers. Use the form above and choose \"Become a Supplier\" to tell us about what you make."
     }
   ];
 

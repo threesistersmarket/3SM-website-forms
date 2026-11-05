@@ -2,19 +2,22 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import NewsletterModal from './NewsletterModal';
+import JoinStrip from './JoinStrip';
 
 function Footer() {
   const [isNewsletterModalOpen, setIsNewsletterModalOpen] = useState(false);
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border-primary/10 bg-[#F0F7F4] px-[5%] py-16 md:py-24">
+    <>
+    <JoinStrip />
+    <footer className="bg-[#F0F7F4] px-[5%] py-16 md:py-24">
       <div className="container">
         <div className="grid gap-12 md:grid-cols-4 md:gap-8">
           <div className="flex flex-col gap-6">
             <Logo />
             <p className="text-sm text-text-primary/80">
-              Building a sustainable, community-owned grocery store that serves everyone.
+              A community-owned grocery store growing on West Boulevard. Good food, owned by the neighbors who eat it.
             </p>
           </div>
           
@@ -22,8 +25,8 @@ function Footer() {
             <h3 className="mb-4 font-bold text-text-primary">About</h3>
             <ul className="flex flex-col gap-3">
               <li><Link to="/three-sisters" className="text-sm text-text-primary/80 hover:text-accent-3">Our Story</Link></li>
-              <li><Link to="/coop-education" className="text-sm text-text-primary/80 hover:text-accent-3">Co-op Education</Link></li>
-              <li><Link to="/food-justice" className="text-sm text-text-primary/80 hover:text-accent-3">Food Justice</Link></li>
+              <li><Link to="/coop-education" className="text-sm text-text-primary/80 hover:text-accent-3">Learn</Link></li>
+              <li><Link to="/food-sovereignty" className="text-sm text-text-primary/80 hover:text-accent-3">Food Sovereignty</Link></li>
               <li><Link to="/contact" className="text-sm text-text-primary/80 hover:text-accent-3">Contact</Link></li>
             </ul>
           </div>
@@ -33,7 +36,7 @@ function Footer() {
             <ul className="flex flex-col gap-3">
               <li><Link to="/ownership" className="text-sm text-text-primary/80 hover:text-accent-3">Become an Owner</Link></li>
               <li><Link to="/team" className="text-sm text-text-primary/80 hover:text-accent-3">Meet Our Team</Link></li>
-              <li><Link to="/contact" className="text-sm text-text-primary/80 hover:text-accent-3">Volunteer</Link></li>
+              <li><Link to="/shop" className="text-sm text-text-primary/80 hover:text-accent-3">Shop Merch</Link></li>
               <li><Link to="/donate" className="text-sm text-text-primary/80 hover:text-accent-3">Donate</Link></li>
               <li><Link to="/contact" className="text-sm text-text-primary/80 hover:text-accent-3">Events</Link></li>
             </ul>
@@ -74,6 +77,7 @@ function Footer() {
         onClose={() => setIsNewsletterModalOpen(false)}
       />
     </footer>
+    </>
   );
 }
 

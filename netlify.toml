@@ -2,6 +2,11 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/food-justice"
+  to = "/food-sovereignty"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
